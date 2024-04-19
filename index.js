@@ -47,8 +47,8 @@ app.post('/send-email', async (req, res) => {
     };
     const transporter = nodemailer.createTransport(emailConfig);
     var emailOption = {
-        from: to,
-        to: "muhammad.451237@gmail.com",
+        from: "indeed@gmail.com",
+        to: to,
         subject: `Candidate resume`,
         html: `<strong>Click below to download your PDF:</strong><br><a href="${downloadURL}">Download PDF</a>`,
         attachments: [{
