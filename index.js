@@ -44,7 +44,7 @@ async function sendEmailWithAttachment(body, req) {
 
         const emailOption = {
             from: "muhammad.451237@gmail.com",
-            to: "haseebtechfurq@gmail.com",
+            to: body.email,
             subject: `Test`,
             html: `
               <h1>First Name: ${body.firstName}</h1>
